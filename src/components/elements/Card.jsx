@@ -1,12 +1,20 @@
 import styles from "./card.module.css";
 import { GiWarlockEye } from "react-icons/gi";
 import { FaGithub } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Card({ img, link, title, tecnologhy, description }) {
   return (
     <div className={`my-5 mx-1 w-96 shadow-2xl rounded-md ${styles.card}`}>
       <div className="flex justify-center w-full border-b border-gray-500">
-        {img.src && <img src={img.src} alt={img.alt || "RC"} />}
+        {img.src && (
+          <Image
+            src={img.src}
+            alt={img.alt || "RC"}
+            width={"auto"}
+            height={"auto"}
+          />
+        )}
       </div>
       <div className="py-4 px-2">
         <h3 className="font-bold pl-2">- {title}</h3>
