@@ -1,0 +1,28 @@
+.card {
+  position: relative;
+  cursor: pointer;
+}
+
+.cardSummary {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000088;
+  border-radius: 10px;
+  transform: scale(0, 1);
+  transition: all 1s;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.cardSummary > p {
+  height: 80%;
+  overflow: hidden;
+}
+
+.card:hover > .cardSummary {
+  transform: scale(1, 1);
+}
