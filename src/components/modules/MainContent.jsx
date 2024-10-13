@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TypeWriting from "./TypeWriting/TypeWriting";
+import TypeWriting from "@/elements/TypeWriting";
 import devSrc from "@/public/Assets/RC.jpg";
 import styles from "./mainContent.module.css";
 import Image from "next/image";
