@@ -1,0 +1,104 @@
+/* Target button  */
+.BtnTarget {
+  position: relative;
+  height: 35px;
+  width: 100px;
+  padding: 7px 30px;
+  border: 2px solid #000;
+  background: #fff;
+  user-select: none;
+  white-space: nowrap;
+  transition: all 0.05s linear;
+  font-family: inherit;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+.BtnTarget:before,
+.BtnTarget:after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  transition: all 0.2s linear;
+}
+
+.BtnTarget:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+}
+
+.BtnTarget:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+}
+
+.BtnTarget:hover {
+  cursor: crosshair;
+}
+
+.BtnTarget:active {
+  transform: scale(0.95);
+}
+
+.BtnTarget:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+}
+
+.BtnTarget:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+
+.BtnTarget span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+}
+
+.btnPulse {
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #800080, #43bece);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.btnPulse:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1s infinite;
+  cursor: pointer;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #8000808f;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
