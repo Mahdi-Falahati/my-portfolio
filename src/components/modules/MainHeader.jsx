@@ -44,7 +44,7 @@ export default function MainHeader() {
 const navItems = [
   {
     name: "Home",
-    href: "#",
+    href: "/",
     icon: <GiBarracksTent className="mr-1 text-green-900" />,
   },
   {
@@ -54,7 +54,7 @@ const navItems = [
   },
   {
     name: "About ME",
-    href: "#AboutMe",
+    href: "/#AboutMe",
     icon: <GiBandit className="mr-1 text-red-700" />,
   },
   {
