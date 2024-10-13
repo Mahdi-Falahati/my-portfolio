@@ -1,11 +1,8 @@
 import RC from "@/public/Assets/RC0.png";
 import { GiEvilBook, GiWorld, GiWerewolf } from "react-icons/gi";
-import call from "@/Icons/call.svg";
-import telegram from "@/Icons/telegram.svg";
-import github from "@/Icons/github.svg";
-import linkedin from "@/Icons/linkedin.svg";
-import CardAnimation from "../elements/CardAnimation";
-import SocialMedia from "../elements/SocialMedia";
+import CardAnimation from "@/elements/CardAnimation";
+import SocialMedia from "@/elements/SocialMedia";
+import { SocialMedias } from "@/constant/SocialMedias";
 
 export default function AboutMe({ educations }) {
   return (
@@ -117,19 +114,4 @@ const habbies = [
   "Listen to music",
   "Go to Gym",
   "Listen to the podcast",
-];
-
-const SocialMedias = [
-  { link: "tel:+989021571617", icon: call, title: "Call ME" },
-  {
-    link: "https://www.linkedin.com/in/falahati-mahdi/",
-    icon: linkedin,
-    title: "Linkedin",
-  },
-  {
-    link: "https://telegram.me/Mahdi_Falahatii",
-    icon: telegram,
-    title: "Telegram",
-  },
-  { link: "https://github.com/Mahdi-Falahati", icon: github, title: "Github" },
 ];
