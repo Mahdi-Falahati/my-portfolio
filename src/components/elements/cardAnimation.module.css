@@ -1,0 +1,108 @@
+.card {
+  height: 265px;
+  width: 450px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 1em;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/*Image*/
+.card_image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background: #0a3394;
+  background: -moz-linear-gradient(
+    170deg,
+    rgba(0, 7, 70, 1) 0%,
+    rgba(160, 0, 160, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    170deg,
+    rgba(0, 7, 70, 1) 0%,
+    rgba(160, 0, 160, 1) 100%
+  );
+  background: -o-linear-gradient(
+    170deg,
+    rgba(0, 7, 70, 1) 0%,
+    rgba(160, 0, 160, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    170deg,
+    rgba(0, 7, 70, 1) 0%,
+    rgba(160, 0, 160, 1) 100%
+  );
+  background: linear-gradient(
+    170deg,
+    rgba(0, 7, 70, 1) 0%,
+    rgba(160, 0, 160, 1) 100%
+  );
+}
+
+/*Description */
+.card_description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 1em;
+  flex-direction: column;
+  background-color: #1d01509f;
+  height: 215px;
+  bottom: 0;
+  border-radius: 1em 1em 0 0;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 1rem;
+  left: 0%;
+  right: 0%;
+}
+
+/*Text*/
+.text_title {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.text_body {
+  font-size: 1em;
+  line-height: 150%;
+}
+
+/* Hover states */
+.card:hover .card_description {
+  transform: translateY(100%);
+}
+
+.RCImg img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  box-shadow: 1px 1px 30px 0px #ffffffb9;
+}
+
+
+@media only screen and (max-width:500px) {
+    .card {
+        height: 280px;
+        width: 300px;
+    }
+    .card_description{
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+  .card {
+    height: 280px;
+    width: 264px;
+  }
+  .card_description{
+    height: 230px;
+  }
+}
