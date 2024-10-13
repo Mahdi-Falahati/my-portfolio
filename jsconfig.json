@@ -12,7 +12,8 @@
       "@/models/*": ["src/models/*"],
       "@/elements/*": ["src/components/elements/*"],
       "@/modules/*": ["src/components/modules/*"],
-      "@/templates/*": ["src/components/templates/*"]
+      "@/templates/*": ["src/components/templates/*"],
+      "@/constant/*": ["src/components/constant/*"],
     }
   }
 }
