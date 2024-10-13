@@ -49,7 +49,7 @@ const navItems = [
   },
   {
     name: "Projects",
-    href: "#OpenSourceProjects",
+    href: "/projects",
     icon: <GiBubblingFlask className="mr-1 text-purple-900" />,
   },
   {
@@ -59,7 +59,7 @@ const navItems = [
   },
   {
     name: "Contact ME",
-    href: "#ContactME",
+    href: "/contact-me",
     icon: <GiAnglerFish className="mr-1 text-blue-900" />,
   },
 ];
