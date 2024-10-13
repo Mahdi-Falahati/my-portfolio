@@ -1,0 +1,18 @@
+.typewriter {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: animated-text 4s linear 1s 1 normal both;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
