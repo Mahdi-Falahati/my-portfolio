@@ -5,6 +5,7 @@ const projectsSchema = new Schema({
   description: String,
   link: { live: String, code: String },
   tecnologhy: [String],
+  img: String,
 });
 
 const Projects = models.Projects || model("Projects", projectsSchema);
