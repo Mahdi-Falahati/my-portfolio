@@ -37,7 +37,7 @@ export default function MainContent() {
         >
           JUNIOR [ FULL-STACK ] DEVELOPER
         </p>
-        <p className="mt-3 px-3 border-x border-gray-400 text-center font-medium text-gray-600 text-sm">
+        <p className="mt-3 px-3 border-x border-gray-400 text-center font-semibold tracking-widest text-gray-700 text-base">
           A developer with 2 years of recent focus on web development who is
           eager to learn new things and enjoy experiencing new challenges, Also
           interested in play chess

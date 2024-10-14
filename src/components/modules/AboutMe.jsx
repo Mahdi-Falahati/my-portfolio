@@ -65,7 +65,7 @@ export default function AboutMe({ educations }) {
                   >
                     <p>- {item.title}</p>
                   </h2>
-                  <p className="font-medium text-gray-400 text-sm">
+                  <p className="font-semibold tracking-wider text-gray-600 text-sm my-1">
                     {item.description}
                   </p>
                   <p className="font-medium flex items-center text-gray-500 text-sm">
@@ -82,9 +82,9 @@ export default function AboutMe({ educations }) {
         className="mb-16 mt-3 flex flex-wrap justify-between"
         data-aos="zoom-in-down"
       >
-        <div className="md:px-4 px-2 w-full tracking-widest text-sm font-bold text-gray-500 text-left md:text-justify">
+        <div className="md:px-4 px-2 w-full tracking-widest text-base font-semibold text-gray-600 text-left md:text-justify">
           <GiWerewolf className="mr-2 inline text-3xl text-black" />
-          <span className="text-sm text-black">As a front-end developer</span>
+          <span className="text-xl text-black">As a front-end developer</span>
           <p className="mb-2">
             fluent in React, Redux, Redux Toolkit, React Router DOM, MUI, and
             TailwindCSS, I have a strong foundation in building dynamic and
