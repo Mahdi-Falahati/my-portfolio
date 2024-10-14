@@ -7,28 +7,32 @@ export default function Card({ img, link, title, tecnologhy, description }) {
   return (
     <div className={`my-5 mx-1 w-96 shadow-2xl rounded-md ${styles.card}`}>
       <div className="flex justify-center w-full border-b border-gray-500">
-        {img.src && (
-          <Image
-            src={img.src}
-            alt={img.alt || "RC"}
-            width={"auto"}
-            height={"auto"}
-          />
-        )}
+        <Image
+          src={`data:image/jpeg;base64,${img}`}
+          alt={title}
+          width={800}
+          height={600}
+          className="w-fit h-[230px]"
+        />
       </div>
       <div className="py-4 px-2">
         <h3 className="font-bold pl-2">- {title}</h3>
-        <ul className="text-gray-400 pt-3 flex flex-wrap justify-around items-center">
+        <ul className="text-gray-400 pt-3 flex flex-wrap justify-between items-center">
           {tecnologhy?.map((tec, id) => (
-            <li key={id} className="border m-1 border-gray-400 rounded-md px-3">
+            <li
+              key={id}
+              className="border mx-1 my-3 border-gray-400 rounded-md px-3"
+            >
               {tec}
             </li>
           ))}
         </ul>
       </div>
       <div className={styles.cardSummary}>
-        <p className="flex justify-center items-center">{description}</p>
-        <div className="flex justify-between">
+        <p className="flex justify-center items-center leading-7 text-xl text-justify">
+          {description}
+        </p>
+        <div className="flex justify-around">
           {link.live && (
             <a
               href={link.live}
