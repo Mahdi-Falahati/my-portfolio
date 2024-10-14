@@ -1,6 +1,7 @@
 import MainHeader from "@/modules/MainHeader";
 import "./globals.css";
 import MainFooter from "@/modules/MainFooter";
+import { PTSansNarrow } from "@/utils/fonts";
 
 export const metadata = {
   title: "Mahdi-Falahati",
@@ -10,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={PTSansNarrow.className}>
         <>
           <header className="container mx-[auto]">
             <MainHeader />
